@@ -3,7 +3,20 @@
   align-items: center;
   padding-top: 125px;
   padding-bottom: 18px;
-  background-image: url(../images/images/about/backgraund-img/backmilkMobile@1x.png);
+  background-image: url('../images/images/about/backgraund-img/backmilkMobile@1x.png');
+   @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+        screen and (min-resolution: 192dpi) and (min-width: 320px),
+        screen and (min-resolution: 2dppx) and (min-width: 320px) {
+            background-image: url('../images/images/about/backgraund-img/backmilkMobile@2x.png');
+    }
+    @media screen and (min-width: 1200px) {
+            background-image: url('../images/images/about/backgraund-img/backmilkDecktop@1x.png');
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+            background-image: url('../images/images/about/backgraund-img/backmilkDecktop@2x.png');
+        }
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right 0px bottom 80px;
