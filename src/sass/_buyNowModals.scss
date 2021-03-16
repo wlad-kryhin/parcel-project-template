@@ -1,0 +1,132 @@
+.backdrop-buy{
+      position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 400ms linear;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-buy-now{
+    position: absolute;
+    left: 50%;
+    top:50%;
+  width: 90%;
+  height: 90%;
+  max-width: 500px;
+  padding: 20px;
+  overflow-y: scroll;
+  z-index: 999999;
+  transform: translate(-50%, -50%);
+  background-color: #f0e6e6;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 28px;
+}
+.calculator-form {
+   background-color: #f0e6e6;
+  padding: 30px 25px;
+}
+
+.calculator-form-title {
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: uppercase;
+  line-height: 135%;
+  color:$color-secondary;
+  margin-bottom: 15px;
+}
+
+.calculator-form-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.calculator-form-select {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid $bg-gold;
+  padding: 5px 0 17px 0;
+  outline: none;
+}
+
+.calculator-form-input-field {
+  margin-right: 10px;
+}
+
+.calculator-form-input-radio-container {
+  display: flex;
+  align-items: center;
+}
+
+.calculator-form-input-label {
+  margin-right: 15px;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 150%;
+  color:$color-dark;
+}
+
+.calculator-form-total-cost {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 150%;
+  color: $color-dark;
+  margin: 0;
+}
+
+.calculator-form-total {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 135%;
+  color:$color-secondary;
+  margin: 0;
+}
+.calculator-form-input .tech-input-container .choices__item {
+  background-color:$color-pink;
+  border: none;
+  border-radius: 3px;
+  position: relative;
+}
+
+.calculator-form-input .tech-input-container:after {
+  content: "\f107";
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  margin-top: -2.5px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 900;
+}
+
+.calculator-form-input .tech-input-container {
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid $bg-gold;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  min-height: 35px;
+  box-sizing: border-box;
+}
+
+.calculator-form-input .choices__input {
+  display: none;
+}
+
+.calculator-form-input .choices__item .choices__button {
+  border-left: none;
+  margin: 0;
+  padding-left: 8px;
+}
