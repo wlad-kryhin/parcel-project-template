@@ -39,6 +39,12 @@
 
   border-radius: 50%;
   background: #ffa5ba;
+  transition: box-shadow 500ms ease-out;
+  &:hover{
+  box-shadow: -3px 3px 30px 5px rgba(206,138,172,0.54);
+-webkit-box-shadow: -3px 3px 30px 5px rgba(206,138,172,0.54);
+-moz-box-shadow: -3px 3px 30px 5px rgba(206,138,172,0.54);
+  }
 }
 .hero-right-side {
   position: relative;
@@ -128,6 +134,7 @@ line-height: 12px;
     right: 0px;
     bottom: -28px;
     width: 168px;
+    transition: transform 300ms linear;
   }
 
   .hero-rs-second{
