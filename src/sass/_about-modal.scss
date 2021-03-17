@@ -1,13 +1,12 @@
-
-.about-backdrop{
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: all 400ms linear;
+.about-backdrop {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 400ms linear;
 }
 .about-modal {
   position: absolute;
@@ -18,8 +17,7 @@
   max-width: 450px;
   padding: 20px;
   max-width: 450px;
-  overflow: scroll;
-  background-image: url("../images/images/about/bio-eco/biomilkDecktop@1x.png");
+  background-image: url('../images/images/about/bio-eco/biomilkDecktop@1x.png');
   background-repeat: no-repeat;
   background-size: contain;
   transform: translate(-50%, -50%);
@@ -39,16 +37,16 @@
   border-radius: 50%;
   cursor: pointer;
   &:hover {
-      background-color: tomato;
+    background-color: tomato;
     // fill: blue;
   }
 }
-.about-icon-close{
-    margin-left: -3px;
-margin-top: 1px;
-width: 28px;
-height: 28px;
-fill: red;
+.about-icon-close {
+  margin-left: -3px;
+  margin-top: 1px;
+  width: 28px;
+  height: 28px;
+  fill: red;
   &:hover {
     fill: rgb(255, 255, 255);
   }
@@ -58,42 +56,41 @@ fill: red;
   visibility: hidden;
   pointer-events: none;
 }
-.modal-title{
-font-family: Titan One;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 34px;
-text-align: center;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-margin-top: 20px;
-color: #ec8da3; 
+.modal-title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: #ec8da3;
 }
-.about-img-modal{
-    width: 470px;
-    margin-top: -30px;
-    margin-left: -30px;
-    position: absolute;
-    filter: alpha(Opacity=50);
-    opacity: 0.2;
+.about-img-modal {
+  width: 470px;
+  margin-top: -30px;
+  margin-left: -30px;
+  position: absolute;
+  filter: alpha(Opacity=50);
+  opacity: 0.2;
 }
-.about-bg-modal{
-    max-width: 100%;
-    filter: alpha(Opacity=50);
-    opacity: 0.5;
+.about-bg-modal {
+  max-width: 100%;
+  filter: alpha(Opacity=50);
+  opacity: 0.5;
 }
-.modal-text{
-    font-family: DM Sans;
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 1.94;
-letter-spacing: 0.04em;
+.modal-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.94;
+  letter-spacing: 0.04em;
 
-color: #907E82;
-    text-align: center;
-   max-width: 100%;
-    margin-top: 120px;
-   
+  color: #907e82;
+  text-align: center;
+  max-width: 100%;
+  margin-top: 120px;
 }
