@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "jquerry": "0.0.1-security",
     "jquery": "^3.6.0"
   }
 }
