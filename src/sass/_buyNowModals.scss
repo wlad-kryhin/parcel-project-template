@@ -1,27 +1,27 @@
-.backdrop-buy{
-      position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: all 400ms linear;
+.backdrop-buy {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 400ms linear;
 }
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-.modal-buy-now{
-    position: absolute;
-    left: 50%;
-    top:50%;
+.modal-buy-now {
+  position: absolute;
+  left: 50%;
+  top: 50%;
   width: 90%;
   height: 90%;
-  max-width:450px;
-  padding: 20px;  
+  max-width: 450px;
   overflow-y: scroll;
+  padding: 20px;
   z-index: 999999;
 
   transform: translate(-50%, -50%);
@@ -31,7 +31,7 @@
   border-radius: 28px;
 }
 .calculator-form {
-   background-color: #f0e6e6;
+  background-color: #f0e6e6;
   padding: 30px 25px;
 }
 
@@ -40,7 +40,7 @@
   font-size: 17px;
   text-decoration: uppercase;
   line-height: 135%;
-  color:$color-secondary;
+  color: $color-secondary;
   margin-bottom: 15px;
 }
 
@@ -72,7 +72,7 @@
   font-weight: normal;
   font-size: 17px;
   line-height: 150%;
-  color:$color-dark;
+  color: $color-dark;
 }
 
 .calculator-form-total-cost {
@@ -87,18 +87,18 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 135%;
-  color:$color-secondary;
+  color: $color-secondary;
   margin: 0;
 }
 .calculator-form-input .tech-input-container .choices__item {
-  background-color:$color-pink;
+  background-color: $color-pink;
   border: none;
   border-radius: 3px;
   position: relative;
 }
 
 .calculator-form-input .tech-input-container:after {
-  content: "\f107";
+  content: '\f107';
   height: 0;
   width: 0;
   position: absolute;
