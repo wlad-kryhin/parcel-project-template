@@ -42,7 +42,7 @@
         top: 28px;
         width: 54px;
         height: 40px;
-        background-image: url(../images/images/gallery/post/“.svg);
+        background-image: url("../images/images/gallery/post/“.svg");
     }
 }
 
@@ -106,34 +106,6 @@
     text-align: center;
 }
 
-.reviews-button-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.reviews-button-list-item {
-    // width: 12px;
-    // height: 12px;
-    &:not(:last-child) {
-        margin-right: 18px;
-    }
-}
-
-.reviews-button {
-    outline: none;
-    border: transparent;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #D9D9D9;
-}
-
-.views-home-icon {
-    width: 12px;
-    height: 12px;
-    fill: #D31342;
-}
 
 @media screen and (min-width: 768px) {
     .review-div {
