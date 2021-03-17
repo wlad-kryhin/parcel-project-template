@@ -2,8 +2,29 @@
   <div class="container">
     <nav class="navigation">
       <a href="index.html" class="link-logo">
-        <img src="./images/images/heder/logo@1x.png" alt="Logotype" />
+        <img 
+        src="./images/images/heder/logo@1x.png"
+        srcset="./images/images/heder/logo@1x.png 1x, ./images/images/heder/logo@2x.png 2x"
+         alt="Logotype" />
       </a>
+
+      <ul class="nav-list-desktop">
+        <li class="nav-item-desktop">
+          <a href="index.html" class="nav-link-desktop active">Home</a>
+        </li>
+        <li class="nav-item-desktop">
+          <a href="#hero-sect" class="nav-link-desktop">About us</a>
+        </li>
+        <li class="nav-item-desktop">
+          <a href="#about-sect" class="nav-link-desktop">How it’s made?</a>
+        </li>
+        <li class="nav-item-desktop">
+          <a href="#product-sect" class="nav-link-desktop">Our products</a>
+        </li>
+        <li class="nav-item-desktop">
+          <a href="#contact-sect" class="nav-link-desktop">Contact</a>
+        </li>
+      </ul>
     </nav>
     <div class="buttons-container">
       <button type="button" class="btn-burger" data-menu-button>
@@ -11,29 +32,29 @@
           <use href="./images/sprite.svg#burger"></use>
         </svg>
       </button>
-      <button class="main-button header-button">
+      <button class="main-button header-button" data-modal-open3>
         Buy now<span class="arrow-btn">&gt;</span>
       </button>
     </div>
     <div class="mobile-menu-container" data-menu>
-      <button class="main-button" type="button">
+      <button class="main-button" type="button" data-modal-open3>
         Buy now<span class="arrow-btn">&gt;</span>
       </button>
-      <ul class="navigation-list">
+      <ul class="navigation-list" id="menu">
         <li class="navigation-item">
-          <a href="" class="navigation-link">Home</a>
+          <a href="index.html" class="navigation-link active">Home</a>
         </li>
         <li class="navigation-item">
-          <a href="" class="navigation-link">About us</a>
+          <a href="#hero-sect" class="navigation-link">About us</a>
         </li>
         <li class="navigation-item">
-          <a href="" class="navigation-link">How it’s made?</a>
+          <a href="#about-sect" class="navigation-link">How it’s made?</a>
         </li>
         <li class="navigation-item">
-          <a href="" class="navigation-link">Our products</a>
+          <a href="#product-sect" class="navigation-link">Our products</a>
         </li>
         <li class="navigation-item">
-          <a href="" class="navigation-link">Contact</a>
+          <a href="#contact-sect" class="navigation-link">Contact</a>
         </li>
       </ul>
       <button type="button" class="menu-mobile-close" data-menu-close>

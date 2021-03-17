@@ -1,320 +1,427 @@
 .contacts {
-    padding-top: 86px;
-    padding-bottom: 113px;
-    background: linear-gradient(to bottom,$bg-main 11%, $bg-light-pink 11% 89% );
+  padding-top: 86px;
+  padding-bottom: 113px;
+  background: linear-gradient(to bottom, $bg-main 11%, $bg-light-pink 11% 89%);
 }
 
 .contacts-list {
-    margin-bottom: 54px;
+  margin-bottom: 54px;
 }
 
 .contacts-item {
-    
-    width: 220px;
-    padding: 43px 20px;
-    background-color: $bg-main;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-    margin: auto; 
-    
+  width: 220px;
+  padding: 43px 20px;
+  background-color: $bg-main;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  @media screen and (max-width: 767px) {
+    margin: auto;
     &:not(:last-child) {
-        @media screen and (max-width: 767px) {
-            margin-bottom: 20px;
-        }
+      margin-bottom: 20px;
     }
+  }
 }
 
 .contacts-representation {
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    color: $color-main;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.833;
-    text-align: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  color: $color-main;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.833;
+  text-align: center;
 }
 
 .rectangle-cafe {
-    width: 80px;
-    height: 19px;
-    background: $bg-gold;
-    border-radius: 4px;
+  width: 80px;
+  height: 19px;
+  background: $bg-gold;
+  border-radius: 4px;
 }
 
 .rectangle-foodtruck {
-    width: 130px;
-    height: 19px;
-    background: $bg-green;
-    border-radius: 4px;
+  width: 130px;
+  height: 19px;
+  background: $bg-green;
+  border-radius: 4px;
 }
 
 .contacts-wrap {
-    &::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 1px;
-        background-color: #E1E1E1;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 }
 
 .contacts-wrap-days {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .contacts-subtitle {
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.833;
-    color: $color-dark;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.833;
+  color: $color-dark;
 }
 
-.contacts-desc, .contact-link {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
-    color: $color-light-dark;
+.contacts-desc,
+.contact-link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $color-light-dark;
 }
 
 .contact-link {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .contacts-days {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.833;
-    color: $color-dark;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.833;
+  color: $color-dark;
+}
+.contacts-time {
+  color: $color-pink;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.183;
 }
 
-
-
-.contacts-time {
-    color: $color-pink;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.183;
+.contacts-btn-list {
+  text-align: center;
 }
 
 //buttons//
 .contacts-btn-list {
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
-.contacts-btn-list {
+
+@media screen and (max-width: 767px) {
+  .contacts-btn-item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  .contacts-btn-red,
+  .contacts-btn-white {
+    width: 161px;
+  }
+}
+
+//backdrop
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 300ms linear;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.contacts-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 85%;
+  padding: 20px;
+  border-radius: 28px;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  background-color: hsl(346, 63%, 68%, 0.8);
+  overflow-y: scroll;
+
+  @media screen and (min-width: 480px) {
+    max-width: 440px;
+  }
+}
+
+.contacts-map-img {
+  width: 100%;
+}
+
+.contacts-btn-close {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow 300ms linear;
+  transition: background-color 300ms linear;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 4px 4px rgba(0, 0, 0, 0.1),
+      1px 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: $bg-secondary;
+  }
+}
+
+.contacts-modal-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 85%;
+  background-color: $bg-mobile-menu;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 28px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 440px;
+  }
+}
+.contacts-modal-form {
+  padding: 60px;
+}
+.contacts-modal-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  font-size: 13px;
+  color: $color-dark;
+}
+
+.contacts-modal-input {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  background-color: $bg-light-pink;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  padding-left: 15px;
+  font-size: 13px;
+  color: $color-dark;
+  cursor: pointer;
+}
+
+.contacts-form-massange {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  display: block;
+  resize: none;
+  border-radius: 15px;
+  background-color: $bg-light-pink;
+  border: none;
+  cursor: pointer;
+}
+
+.contacts-form-btn {
+  margin: auto;
+  width: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-top: 0;
+    // padding-top: 119px;
+    padding-bottom: 158px;
+    background: linear-gradient(to bottom, $bg-main 8%, $bg-light-pink 8px 92%);
+  }
+
+  .contacts-list {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 81px;
+  }
 
-    @media screen and (max-width: 767px) {
-        flex-direction: column;
-    }
-    
-    @media screen and (max-width: 767px) {
-        flex-direction: column;
-    }
-}
-
-.contacts-btn-item {
+  .contacts-item {
+    padding: 50px 31px;
     &:not(:last-child) {
-        @media screen and (max-width: 767px) {
-            margin-bottom: 10px;
-        }
+      margin-right: 20px;
     }
-}
+  }
 
-@media screen and (min-width: 768px) {
-    .contacts {
-        padding-top: 0;
-        // padding-top: 119px;
-        padding-bottom: 158px;
-        background: linear-gradient(to bottom,$bg-main 8%, $bg-light-pink 8% 91% );
+  .contacts-representation {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.875;
+  }
+
+  .rectangle-cafe {
+    width: 73px;
+    height: 28px;
+  }
+
+  .rectangle-foodtruck {
+    width: 138px;
+    height: 28px;
+  }
+
+  .contacts-wrap {
+    &::after {
+      content: '';
+      display: block;
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
+  }
 
-    .contacts-list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 81px;
-    }
+  .contacts-wrap-days {
+    margin-bottom: 16px;
+  }
 
-    .contacts-item {
-        padding: 50px 31px;
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
-    }
+  .contacts-subtitle {
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 1.857;
+  }
 
-    .contacts-representation {
-        margin-bottom: 30px;
-        font-size: 16px;
-        line-height: 1.875;
-    }
+  .contacts-desc {
+    font-size: 14px;
+    line-height: 1.643;
+  }
 
-    .rectangle-cafe {
-        width: 73px;
-        height: 28px;
-    }
+  .contact-link {
+    font-size: 14px;
+    line-height: 1.857;
+  }
 
-    .rectangle-foodtruck {
-        width: 138px;
-        height: 28px;
-    }
+  .contacts-time {
+    font-size: 14px;
+    line-height: 1.857;
+    color: $color-pink;
+  }
 
-    .contacts-wrap {
-        &::after {
-            content: "";
-            display: block;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-    }
+  .contacts-days {
+    font-size: 14px;
+    line-height: 1.833;
+    color: $color-dark;
+  }
 
-    .contacts-wrap-days {
-        margin-bottom: 16px;
-    }
+  //buttons//
 
-    .contacts-subtitle {
-        margin-bottom: 14px;
-        font-size: 14px;
-        line-height: 1.857;
-    }
-
-    .contacts-desc {
-        font-size: 14px;
-        line-height: 1.643;
-    }
-
-    .contact-link {
-        font-size: 14px;
-        line-height: 1.857;
-    }
-
-    .contacts-time {
-        font-size: 14px;
-        line-height: 1.857;
-        color: $color-pink;
-    }
-
-    .contacts-days {
-        font-size: 14px;
-        line-height: 1.833;
-        color: $color-dark;
-    }
-
-    //buttons//
-
-.contacts-btn-item {
+  .contacts-btn-item {
     &:not(:last-child) {
-
-        @media screen and (max-width: 767px) {
-            margin-bottom: 10px;
-
-        margin-right: 15px;
-        }
+      margin-right: 15px;
     }
+  }
 }
-
-
-@media screen and (min-width: 768px) {
-    .contacts {
-        padding-top: 0;
-        // padding-top: 119px;
-        padding-bottom: 158px;
-        background: linear-gradient(to bottom,$bg-main 8%, $bg-light-pink 8% 91% );
+@media screen and (max-width: 1199px) {
+  .contacts-btn-red {
+    width: 191px;
+  }
+  .contacts-btn-white {
+    width: 174px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
-    .contacts {
-        padding-top: 0;
-        // padding-top: 132px;
-        padding-bottom: 165px;
-        background-image: url(../images/bg-contacts@1x.png);
-        background-color: linear-gradient(to bottom,$bg-main 8%, $bg-light-pink 8% 91%);
+  .contacts {
+    padding-top: 0;
+    // padding-top: 132px;
+    padding-bottom: 165px;
+    background: linear-gradient
+      (to bottom, $bg-main 11%, $bg-light-pink 11% 89%);
+  }
+
+  .bg-img {
+    background-image: url(../images/bg-contacts@1x.png);
+    background-position: right 0px top 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .bg-img {
+      background-image: url(../images/bg-contacts@2x.png);
     }
+  }
 
-    .contacts-list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 81px;
-    }
+  .contacts-list {
+    margin-bottom: 86px;
+  }
 
-    .contacts-item {
-        padding: 50px 31px;
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
-    }
-
-    .contacts-representation {
-        margin-bottom: 30px;
-        font-size: 16px;
-        line-height: 1.875;
-    }
-
-    .rectangle-cafe {
-        width: 73px;
-        height: 28px;
-    }
-
-    .rectangle-foodtruck {
-        width: 138px;
-        height: 28px;
-    }
-
-    .contacts-wrap {
-        &::after {
-            content: "";
-            display: block;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-    }
-
-    .contacts-wrap-days {
-        margin-bottom: 16px;
-    }
-
-    .contacts-subtitle {
-        margin-bottom: 14px;
-        font-size: 14px;
-        line-height: 1.857;
-    }
-
-    .contacts-desc {
-        font-size: 14px;
-        line-height: 1.643;
-    }
-
-    .contact-link {
-        font-size: 14px;
-        line-height: 1.857;
-    }
-
-    
-    .contacts-time {
-        font-size: 14px;
-        line-height: 1.857;
-        color: $color-pink;
-    }
-
-
-    .contacts-days {
-        font-size: 14px;
-        line-height: 1.833;
-        color: $color-dark;
-    }
-
-
-    //buttons//
-
-.contacts-btn-item {
+  .contacts-item {
+    width: 330px;
+    padding: 51px 43px;
     &:not(:last-child) {
-        margin-right: 15px;
-        }
+      margin-right: 31px;
     }
+  }
+
+  .contacts-wrap {
+    &::after {
+      content: '';
+      display: block;
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .contacts-subtitle {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.875;
+  }
+
+  .contacts-desc,
+  .contact-link {
+    font-size: 16px;
+    line-height: 1.813;
+  }
+  .contacts-days,
+  .contacts-time {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+
+  //buttons
+
+  .contacts-btn-red {
+    width: 198px;
+  }
+  .contacts-btn-white {
+    width: 180px;
+  }
 }
 
-
+.closed {
+  opacity: 0;
+  pointer-events: none;
+}
