@@ -5,6 +5,8 @@ $(document).ready(function(){
         adaptiveHeight:true,
         infinite:false,
         easing:'ease',
-        centerMode:true,
+        centerMode: true,
+        slidesToShow: 2,
+    
     });
 })
