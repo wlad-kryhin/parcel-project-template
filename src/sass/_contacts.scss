@@ -149,11 +149,11 @@
   transform: translate(-50%, -50%);
   width: 90%;
   height: 85%;
-  padding: 20px;
+  padding: 30px;
   border-radius: 28px;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
-    0px 2px 1px rgb(0 0 0 / 20%);
-  background-color: hsl(346, 63%, 68%, 0.8);
+              0px 2px 1px rgb(0 0 0 / 20%);
+  background-color: $bg-mobile-menu;
   overflow-y: scroll;
 
   @media screen and (min-width: 480px) {
@@ -163,6 +163,22 @@
 
 .contacts-map-img {
   width: 100%;
+}
+
+.contacts-map {
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+      color: $bg-secondary;
+    }
 }
 
 .contacts-btn-close {
