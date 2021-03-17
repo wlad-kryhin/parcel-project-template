@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/animation-on-scroll.js"],"names":["AOS","init","offset","duration"],"mappings":"AAAAA,GAAG,CAACC,IAAJ,CAAS;AACLC,EAAAA,MAAM,EAAE,GADH;AAELC,EAAAA,QAAQ,EAAE;AAFL,CAAT","file":"animation-on-scroll.3437b071.js","sourceRoot":"..\\src","sourcesContent":["AOS.init({\n    offset: 200,\n    duration: 1200,\n});"]}
