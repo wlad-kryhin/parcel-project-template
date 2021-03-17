@@ -6,7 +6,7 @@ $(document).ready(function(){
         infinite:false,
         easing:'ease',
         centerMode: true,
-        slidesToShow: 2,
-    
+        slidesToShow: 1,
+        vertical: true,
     });
 })
