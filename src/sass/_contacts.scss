@@ -152,12 +152,13 @@
   padding: 30px;
   border-radius: 28px;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
-              0px 2px 1px rgb(0 0 0 / 20%);
+    0px 2px 1px rgb(0 0 0 / 20%);
   background-color: $bg-mobile-menu;
   overflow-y: scroll;
 
   @media screen and (min-width: 480px) {
     max-width: 440px;
+    overflow-y: hidden;
   }
 }
 
@@ -175,10 +176,10 @@
   cursor: pointer;
   transition: color 250ms linear;
 
-    &:hover,
-    &:focus {
-      color: $bg-secondary;
-    }
+  &:hover,
+  &:focus {
+    color: $bg-secondary;
+  }
 }
 
 .contacts-btn-close {
