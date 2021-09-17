@@ -185,4 +185,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"t8TD":[function(require,module,exports) {
 "use strict";var e=r(require("swiper"));function r(e){return e&&e.__esModule?e:{default:e}}require("swiper/swiper-bundle.css");var i=new e.default(".swiper-container",{speed:1e3,effect:"slide",grabCursor:!0,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},scrollbar:{el:".swiper-scrollbar"}});
 },{"swiper":"Riml","swiper/swiper-bundle.css":"yypP"}]},{},["t8TD"], null)
-//# sourceMappingURL=/project_ice_cream/sliders.beadd9ae.js.map
+//# sourceMappingURL=/parcel-project-template/sliders.beadd9ae.js.map
