@@ -155,7 +155,7 @@
   }
 }
 .swiper-container {
-  width: 200px;
+  min-width: 250px;
   height: auto;
   @media screen and (min-width: 768px) {
     width: 550px;
